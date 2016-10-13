@@ -51,6 +51,7 @@ module.exports = function(grunt) {
 
     shell: {
       prodServer: {
+        command: 'git push lyft master'
       }
     },
   });
@@ -76,7 +77,7 @@ module.exports = function(grunt) {
     'mochaTest'
   ]);
 
-  grunt.registerTask('build', [
+  grunt.registerTask('build', [ 'shell'
   ]);
 
   grunt.registerTask('upload', function(n) {
