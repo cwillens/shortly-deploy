@@ -70,7 +70,7 @@ module.exports = function(grunt) {
 
     shell: {
       prodServer: {
-        command: 'git push lyft master'
+        command: 'git add . && git commit && git push live master'
       }
     },
   });
